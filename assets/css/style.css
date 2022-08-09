@@ -90,6 +90,8 @@ html {
   height: 4rem;
   background-color: #e41c6f;
   box-shadow: 0.2rem 0.2rem 0.4rem #555;
+  position: absolute;
+  z-index: 999;
 }
 
 .navbar-link {
@@ -102,6 +104,10 @@ html {
   text-decoration: none;
   position: relative;
   transition: all 0.2s;
+}
+
+.change.navbar-link {
+  color: #fff;
 }
 
 .navbar-link:hover {
@@ -117,6 +123,10 @@ html {
   height: 0.4rem;
   background-color: #fff;
   transition: all 0.3s;
+}
+
+.change.navbar-link::before {
+  width: 130%;
 }
 
 .navbar-link:hover::before {
@@ -299,4 +309,91 @@ html {
   opacity: 1;
   visibility: visible;
   transition: bottom 0.2s 0.2s;
+}
+
+/*  */
+.section-4 {
+  width: 100%;
+  height: 70vh;
+  background-color: #333;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section-4-heading {
+  color: #fff;
+  box-shadow: none;
+  border-color: #fff;
+}
+
+.contact-form {
+  width: 50rem;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background-color: #eef;
+  font-size: 1.5rem;
+  border: 0.2rem solid #e41c6f;
+  color: #555;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 10rem;
+  max-height: 15rem;
+  max-width: 100%;
+}
+
+.contact-form .contact-form-btn {
+  background-color: #e41c6f;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+}
+
+/*  */
+
+.section-5 {
+  width: 100%;
+  height: 25vh;
+  background-color: #eef;
+  justify-content: space-evenly;
+}
+
+.social-media-link {
+  margin: 0 2rem;
+  padding: 1.2rem 1.8rem;
+  background-color: #e41c6f;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  position: relative;
+  border-radius: 50%;
+}
+
+.social-media-link i {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media-link:hover {
+  background-color: rebeccapurple;
+}
+
+/*  */
+
+.sticky {
+  position: fixed;
+  top: 0;
 }
